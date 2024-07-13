@@ -30,9 +30,6 @@
             <groupId>com.usdev</groupId>
             <artifactId>domain</artifactId>
             <version>${version}</version>
-<!--            <classifier>tests</classifier>-->
-<!--            <type>test-jar</type>-->
-<!--            <scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>com.usdev</groupId>
@@ -56,6 +53,10 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
