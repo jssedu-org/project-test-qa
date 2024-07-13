@@ -67,7 +67,7 @@ class PriceServiceTest {
                 .brandId(BrandId.builder().id(2L).build())
                 .startDate(LocalDateTime.now())
                 .endDate(LocalDateTime.now())
-                .priceList(PriceList.builder().id(3L).build())
+                .priceList(PriceList.builder().id(5L).build())
                 .productId(ProductId.builder().id(4L).build())
                 .priority(Priority.builder().id(1).build())
                 .price(6.0)
