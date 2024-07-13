@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'project-test-qa/**'
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
@@ -37,4 +35,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=jssedu-org_project-test-qa
-        working-directory: ./project-test-qa
